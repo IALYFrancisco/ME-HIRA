@@ -1,14 +1,10 @@
 import './App.css';
+import HomeView from './views/HomeView';
 
 function App() {
   return (
     <div className="App">
-      <main>
-        <h1>
-          Hello it works!
-        </h1>
-        <button>Hello</button>
-      </main>
+      <HomeView/>
     </div>
   );
 }
