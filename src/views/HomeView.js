@@ -11,7 +11,7 @@ function HomeView () {
                 <input type="text" name="" id="" placeholder="Faite une recherche ..."/>
             </div>
             <div class="button-container">
-                <ButtonComponent text="Se connecter"  />
+                <ButtonComponent text="Se connecter"/>
             </div>
             </nav>
       </header>
