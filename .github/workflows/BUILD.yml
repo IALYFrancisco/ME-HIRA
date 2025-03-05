@@ -1,0 +1,27 @@
+name: Project continuous integration 🎵
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  Build-project:
+    runs-on: 
+      ubuntu-latest
+
+    steps:
+  
+    - name: Setup node.js 🔨
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22'
+  
+    - name: Pull app project source code 💾
+      uses: actions/checkout@v4
+  
+    - name: Install project dependencies 🧰
+      run: npm install
+  
+    - name: Build app 🔩
+      run: npm run build
