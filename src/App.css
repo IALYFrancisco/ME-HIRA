@@ -56,3 +56,9 @@ button {
 button:active {
   transform: scale(0.97);
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
