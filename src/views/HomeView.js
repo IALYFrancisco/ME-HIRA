@@ -15,7 +15,7 @@ function HomeView () {
                     <ButtonComponent text="Se connecter"/>
                 </div>
             </nav>
-      </header>
+        </header>
     )
 }
 
