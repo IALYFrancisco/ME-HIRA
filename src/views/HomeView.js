@@ -21,7 +21,9 @@ function HomeView () {
             <main>
                 <aside></aside>
                 <section className='song-list'>
-                    <SongComponent/>
+                    <ul>
+                        <SongComponent/>
+                    </ul>
                 </section>
                 <aside></aside>
             </main>

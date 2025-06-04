@@ -4,4 +4,56 @@
     background-color: #1E4D5D;
     margin: auto;
     transform: translateX(-33px);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.author {
+    color: #feb236;
+}
+
+.play{
+    width: 20px;
+    margin-top: 3px;
+}
+
+.options {
+    width: 30px;
+}
+
+.img_logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.song_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.play_container {
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play_container:active {
+    transform: scale(0.8);
+    transition: 100ms;
 }

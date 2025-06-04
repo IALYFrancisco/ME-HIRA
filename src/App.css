@@ -65,7 +65,6 @@ button:active {
 
 main {
   width: 100%;
-  /* padding: 30px; */
-  margin: auto;
-  background-color: green;
+  padding: 30px;
+  margin-top: 25px;
 }
