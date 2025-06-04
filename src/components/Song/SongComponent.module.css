@@ -1,0 +1,7 @@
+.song {
+    width: 100%;
+    max-width: 650px;
+    background-color: #1E4D5D;
+    margin: auto;
+    transform: translateX(-33px);
+}

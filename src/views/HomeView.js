@@ -1,5 +1,6 @@
 import ButtonComponent from '../components/ButtonComponent'
 import LogoComponent from '../components/LogoComponent';
+import SongComponent from '../components/Song/SongComponent';
 
 function HomeView () {
     return (
@@ -19,10 +20,8 @@ function HomeView () {
             </header>
             <main>
                 <aside></aside>
-                <section>
-                    <div class="music">
-                        
-                    </div>
+                <section className='song-list'>
+                    <SongComponent/>
                 </section>
                 <aside></aside>
             </main>

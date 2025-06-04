@@ -62,3 +62,10 @@ button:active {
   align-items: center;
   justify-content: center;
 }
+
+main {
+  width: 100%;
+  /* padding: 30px; */
+  margin: auto;
+  background-color: green;
+}
