@@ -3,6 +3,7 @@ import LogoComponent from '../components/LogoComponent';
 import SongComponent from '../components/Song/SongComponent';
 
 function HomeView () {
+
     return (
         <body>
             <header>
@@ -22,7 +23,7 @@ function HomeView () {
                 <aside></aside>
                 <section>
                     <ul>
-                        <SongComponent/>
+                        <SongComponent src='/images/01 Jerry Marcoss - Mila mijoro (Official Video).mp3'/>
                         <SongComponent/>
                         <SongComponent/>
                         <SongComponent/>
@@ -33,6 +34,8 @@ function HomeView () {
             </main>
         </body>
     )
+
+    
 }
 
 export default HomeView;

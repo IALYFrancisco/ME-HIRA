@@ -1,8 +1,9 @@
 import Styles from './SongComponent.module.css'
 
-function SongComponent(){
+function SongComponent({src}){
     return(
         <li className={Styles.song}>
+            <audio src={src}></audio>
             <img src='/images/logo-de-me-hira.png' alt='Logo de ME-HIRA' className={Styles.img_logo} />
             <section className={Styles.song_info}>
                 <section className={Styles.left}>
