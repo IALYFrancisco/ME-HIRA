@@ -11,9 +11,9 @@ function SongComponent(){
                 </section>
                 <section className={Styles.right}>
                     <div className={Styles.play_container}>
-                        <img src='/images/heart.png' className={Styles.play}/>
+                        <img src='/images/heart.png' className={Styles.play} alt='icon play de me-hira'/>
                     </div>
-                    <img src='/images/france.png' className={Styles.options}/>
+                    <img src='/images/france.png' className={Styles.options} alt='icon opttions de me-hira'/>
                 </section>
             </section>
         </li>

@@ -2,13 +2,14 @@
     width: 100%;
     max-width: 650px;
     background-color: #1E4D5D;
-    margin: auto;
+    margin: 0 auto 3px auto;
     transform: translateX(-33px);
     padding: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     color: white;
+    box-shadow: 1px 1px 5px #00000024;
 }
 
 .author {

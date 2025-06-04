@@ -20,8 +20,12 @@ function HomeView () {
             </header>
             <main>
                 <aside></aside>
-                <section className='song-list'>
+                <section>
                     <ul>
+                        <SongComponent/>
+                        <SongComponent/>
+                        <SongComponent/>
+                        <SongComponent/>
                         <SongComponent/>
                     </ul>
                 </section>
