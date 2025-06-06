@@ -14,7 +14,7 @@ function SongComponent({src}){
                     <div className={Styles.play_container}>
                         <img src='/images/heart.png' className={Styles.play} alt='icon play de me-hira'/>
                     </div>
-                    <img src='/images/france.png' className={Styles.options} alt='icon opttions de me-hira'/>
+                    <img src='/images/options.png' className={Styles.options} alt='icon opttions de me-hira'/>
                 </section>
             </section>
         </li>
