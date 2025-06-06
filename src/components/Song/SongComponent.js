@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import Styles from './SongComponent.module.css'
 
-function SongComponent({src}){
+function SongComponent({src, title, author}){
 
     const songRef = useRef(null)
 
@@ -17,14 +17,14 @@ function SongComponent({src}){
             <img src='/images/logo-de-me-hira.png' alt='Logo de ME-HIRA' className={Styles.img_logo} />
             <section className={Styles.song_info}>
                 <section className={Styles.left}>
-                    <h4 className={Styles.title}><em>Sambatra</em></h4>
-                    <h6 className={Styles.author}>Rolf</h6>
+                    <h4 className={Styles.title}>{title}</h4>
+                    <h6 className={Styles.author}>{author}</h6>
                 </section>
                 <section className={Styles.right}>
-                    <div className={Styles.play_container}>
+                    <div className={Styles.play_container} onClick={playSong}>
                         <img src='/images/play.png' className={Styles.play} alt='icon play de me-hira'/>
                     </div>
-                    <div className={Styles.play_container} onClick={playSong}>
+                    <div className={Styles.play_container}>
                         <img src='/images/options.png' className={Styles.options} alt='icon opttions de me-hira'/>
                     </div>
                 </section>
