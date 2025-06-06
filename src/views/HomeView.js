@@ -5,16 +5,16 @@ import SongComponent from '../components/Song/SongComponent';
 function HomeView () {
 
     return (
-        <body>
+        <>
             <header>
                 <nav>
-                    <div class="logo-container">
+                    <div className="logo-container">
                         <LogoComponent/>
                 </div>
-                    <div class="searchbar-container">
+                    <div className="searchbar-container">
                         <input type="text" name="" id="" placeholder="Faite une recherche ..."/>
                     </div>
-                    <div class="button-container">
+                    <div className="button-container">
                         <ButtonComponent text="Se connecter"/>
                     </div>
                 </nav>
@@ -32,7 +32,7 @@ function HomeView () {
                 </section>
                 <aside></aside>
             </main>
-        </body>
+        </>
     )
 
     
