@@ -1,0 +1,58 @@
+.song {
+    width: 100%;
+    max-width: 650px;
+    background-color: #1E4D5D;
+    margin: 0 auto 3px auto;
+    transform: translateX(-33px);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 1px 5px #00000024;
+}
+
+.author {
+    color: #feb236;
+}
+
+.play{
+    width: 20px;
+}
+
+.options {
+    width: 20px;
+}
+
+.img_logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.song_info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.play_container {
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play_container:active {
+    transform: scale(0.8);
+    transition: 100ms;
+}
