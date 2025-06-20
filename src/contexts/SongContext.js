@@ -23,7 +23,7 @@ export const SongProvider = ({ children }) => {
   };
 
   return (
-    <SongContext.Provider value={{ play }}>
+    <SongContext.Provider value={{ play, currentSong, isPlaying }}>
       {children}
     </SongContext.Provider>
   );
