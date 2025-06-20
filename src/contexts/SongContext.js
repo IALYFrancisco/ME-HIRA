@@ -1,30 +1,30 @@
 import { createContext, useState } from "react";
 
-export const AudioContext = createContext();
+export const SongContext = createContext();
 
-export const AudioProvider = ({ children }) => {
-  const [currentAudio, setCurrentAudio] = useState(null);
+export const SongProvider = ({ children }) => {
+  const [currentSong, setCurrentSong] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const play = (audioElement) => {
-    if (currentAudio && currentAudio !== audioElement) {
-      currentAudio.pause();
-      currentAudio.currentTime = 0;
+  const play = (songElement) => {
+    if (currentSong && currentSong !== songElement) {
+      currentSong.pause();
+      currentSong.currentTime = 0;
     }
 
-    if (audioElement === currentAudio && isPlaying) {
-      audioElement.pause();
+    if (songElement === currentSong && isPlaying) {
+      songElement.pause();
       setIsPlaying(false);
     } else {
-      audioElement.play();
-      setCurrentAudio(audioElement);
+      songElement.play();
+      setCurrentSong(songElement);
       setIsPlaying(true);
     }
   };
 
   return (
-    <AudioContext.Provider value={{ play }}>
+    <SongContext.Provider value={{ play }}>
       {children}
-    </AudioContext.Provider>
+    </SongContext.Provider>
   );
 };
