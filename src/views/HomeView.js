@@ -7,7 +7,7 @@ function HomeView() {
   const [songs, setSongs] = useState([]);
 
   useEffect(() => {
-    fetch('https://mehiraserver.onrender.com/song/get')
+    fetch(`${process.env.REACT_APP_API_BASE_URL}/song/get`)
       .then((res) => res.json())
       .then((data) => setSongs(data.data))
       .catch((err) => console.error("Erreur lors du fetch des chansons:", err));
