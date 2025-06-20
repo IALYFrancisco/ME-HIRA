@@ -9,7 +9,7 @@ function HomeView() {
   useEffect(() => {
     fetch('https://mehiraserver.onrender.com/song/get')
       .then((res) => res.json())
-      .then((data) => setSongs(data))
+      .then((data) => setSongs(data.data))
       .catch((err) => console.error("Erreur lors du fetch des chansons:", err));
   }, []);
 
